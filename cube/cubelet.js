@@ -23,5 +23,5 @@ export default cubelet = (faces) => {
         front: faces.front,
         back: faces.back
     });
-    return {u, r, f};
+    return {faces, u, r, f};
 };
