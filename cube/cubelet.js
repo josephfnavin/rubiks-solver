@@ -1,5 +1,5 @@
-export default cubelet = (faces) => {
-    const u = () => ({
+const cubelet = (faces) => {
+    const u = () => cubelet({
         up: faces.up,
         down: faces.down,
         front: faces.right,
@@ -7,7 +7,7 @@ export default cubelet = (faces) => {
         back: faces.left,
         left: faces.front
     });
-    const r = () => ({
+    const r = () => cubelet({
         up: faces.front,
         front: faces.down,
         down: faces.back,
@@ -15,7 +15,7 @@ export default cubelet = (faces) => {
         right: faces.right,
         left: faces.left
     });
-    const f = () => ({
+    const f = () => cubelet({
         up: faces.left,
         right: faces.up,
         down: faces.right,
@@ -25,3 +25,5 @@ export default cubelet = (faces) => {
     });
     return {faces, u, r, f};
 };
+
+export default cubelet;
