@@ -1,0 +1,16 @@
+{
+  "name": "rubiks-solver",
+  "version": "1.0.0",
+  "description": "A space to play around with different rubiks cube strategies",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --colors"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "type": "module"
+}
