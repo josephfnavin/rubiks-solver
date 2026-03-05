@@ -9,7 +9,7 @@ const YELLOW = 'y';
 
 
 
-export default {
+const HoriontalSectionCubeletCubeValues = {
     top: [
         // back row
         Cubelet({up: WHITE, left: RED, back: GREEN, right: null, down: null, front: null}),
@@ -52,4 +52,15 @@ export default {
         Cubelet({up: null, left: null, back: null, right: null, down: YELLOW, front: BLUE}),
         Cubelet({up: null, left: null, back: null, right: ORANGE, down: YELLOW, front: BLUE}),
     ]
-}
+};
+
+const StandardLayoutArrayCubeValues = [
+    'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g', 'g',
+    'r', 'r', 'r', 'w', 'w', 'w', 'o', 'o', 'o', 'y', 'y', 'y',
+    'r', 'r', 'r', 'w', 'w', 'w', 'o', 'o', 'o', 'y', 'y', 'y',
+    'r', 'r', 'r', 'w', 'w', 'w', 'o', 'o', 'o', 'y', 'y', 'y',
+    'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'
+];
+
+export default StandardLayoutArrayCubeValues;
+
