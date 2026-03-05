@@ -15,7 +15,7 @@ const HoriontalSectionCubeletCube = (values) => {
                 middle: values.middle,
                 bottom: values.bottom
             }
-            return cube(newValues);
+            return HoriontalSectionCubeletCube(newValues);
         },
 
         getUpColors: () => {
@@ -82,7 +82,7 @@ const StandardLayoutArrayCube = (values) => {
                 values[48], values[49], values[50],
                 values[51], values[52], values[53]
             ];
-            return cube(newValues);
+            return StandardLayoutArrayCube(newValues);
         },
 
         getUpColors: () => {
